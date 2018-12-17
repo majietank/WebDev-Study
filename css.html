@@ -9,16 +9,25 @@
         .title{font-weight:bold;font-size: 20px;border:1px solid skyblue;margin: 2px}
         .neirong{font-size: 15px;color: deeppink;border:1px solid skyblue;margin: 2px}
         .keyword{color: navy;font-style::normal;border:1px solid skyblue}
+        .box{
+            position: absolute;left: 600px;top:50px;
+            height: 100px;width: 100px;background-color: cornflowerblue
+            }
     </style><!--定义基础文本样式，方便重复调用-->
 </head>
 
-<body><!--body 代表整个网页-->
-    <div style="font-weight:bold;font-size: 20px">标题1</div>
-        <!--定义区块-->
+<body><!--body 标签 定义整个网页-->
+    <div style="font-weight：;font-size: 20px">标题1</div>
+        <!--div 标签 定义区块
+                style 定义区块样式
+                    font-weight 定义字体格式
+                        bold-->
     <div style="font-weight:bold;font-size: 20px">标题1</div>
         <!--style 设置区块字体样式-->
     <div style="font-weight:bold;font-size: 20px">标题1</div>
         <!--font-weight 定义粗细体，font-size 定义字体大小-->
+    <div style="background-color: aqua;height: 20px;">text</div>
+        <!--background-color 设置区块背景色-->    
     <div style="color:chartreuse">标题1</div>
         <!--color 定义字体颜色-->
     <div style="font-size: 25px;color: coral">CSS</div>
@@ -31,19 +40,29 @@
     <div>每一个标签在网页中占用一个方型区块，这每一个方型区块称为Box Model</div>
     <div style="margin-top:10px;margin-bottom: 10px">标题1</div>
         <!--margin 区块间距离，margin-top 区块上方距离，margin-bottom 区块下方距离-->
-    <div style="border:1px solid darkseagreen">内容11</div>
-        <!--border 区块边框 3个属性 border:1px 边框粗细，solid/dashed 边框样式，bule 边框颜色-->
+    <div style="border:2px solid brown;width: 400px;height: 400px">内容11</div>
+        <!--    border 区块边框 3个属性 
+                    1px 边框粗细，
+                    solid/dashed 边框样式，
+                    bule 边框颜色
+                width 指定区块宽度，默认宽度为网页100%，
+                heigh 指定区块高度，默认根据内容自动设定。
+        -->
     <div style="padding: 5px">内容111</div>
         <!--padding 网页内容与边框距离-->
-    <div style="border:solid;width: 400px;height: 400px;">1</div>
-        <!--区块默认宽度为100%，width 指定区块宽度 -->
-        <!--区块高度默认根据内容自动设定，heigh 指定区块高度-->
     <div class="title">概述</div>
     <div class="neirong">CSS不能单独使用，必须与HTML或XML一起协同工作，为HTML或XML起装饰作用。
         本文主要介绍用于装饰HTML网页的<span class="keyword">CSS</span>技术。其中HTML负责确定网页中有哪些内容，CSS确定以何种
         外观(大小、粗细、颜色、对齐和位置)展现这些元素。CSS可以用于设定页面布局、设定页面元素样
         式、设定适用于所有网页的全局样式。CSS可以零散地直接添加在要应用样式的网页元素上，也可以
-        集中化内置于网页、链接式引入网页以及导入式引入网页。</div>   
+        集中化内置于网页、链接式引入网页以及导入式引入网页。</div> 
+    <div class="box" ></div> 
+    <div style="height: 200px;width: 200px;background-color: blue;position: absolute;left: 600px;top: 600xp"></div>
+        <!--区块定位， position 定义区块定位形式
+                        absolute 绝对位置
+                        relative 相对位置
+                        left 从左到右 
+                        top 从上到下-->
 </body>
 
 </html>
