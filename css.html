@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    </meta>
+    <title>CSS 学习</title>
+    <style type="text/css">
+        .title{font-weight:bold;font-size: 20px;border:1px solid skyblue;margin: 2px}
+        .neirong{font-size: 15px;color: deeppink;border:1px solid skyblue;margin: 2px}
+        .keyword{color: navy;font-style::normal;border:1px solid skyblue}
+    </style><!--定义基础文本样式，方便重复调用-->
+</head>
+
+<body><!--body 代表整个网页-->
+    <div style="font-weight:bold;font-size: 20px">标题1</div>
+        <!--定义区块-->
+    <div style="font-weight:bold;font-size: 20px">标题1</div>
+        <!--style 设置区块字体样式-->
+    <div style="font-weight:bold;font-size: 20px">标题1</div>
+        <!--font-weight 定义粗细体，font-size 定义字体大小-->
+    <div style="color:chartreuse">标题1</div>
+        <!--color 定义字体颜色-->
+    <div style="font-size: 25px;color: coral">CSS</div>
+    <div><span style="color:crimson">层叠样式表</span>（英语：Cascading Style Sheets，简写CSS），又称串样式列表、级联样式表、
+        串接样式表、阶层式样式表，一种用来为结构化文档（如HTML文档或XML应用）添加样式（字体、
+        间距和颜色等）的计算机语言，由W3C定义和维护。目前最新版本是CSS2.1，为W3C的推荐标准。
+        CSS3现在已被大部分现代浏览器支持，而下一版的CSS4仍在开发中。</div>
+        <!--span 标签 ：行内选取文字-->
+    <div>CSS Box Model</div>
+    <div>每一个标签在网页中占用一个方型区块，这每一个方型区块称为Box Model</div>
+    <div style="margin-top:10px;margin-bottom: 10px">标题1</div>
+        <!--margin 区块间距离，margin-top 区块上方距离，margin-bottom 区块下方距离-->
+    <div style="border:1px solid darkseagreen">内容11</div>
+        <!--border 区块边框 3个属性 border:1px 边框粗细，solid/dashed 边框样式，bule 边框颜色-->
+    <div style="padding: 5px">内容111</div>
+        <!--padding 网页内容与边框距离-->
+    <div style="border:solid;width: 400px;height: 400px;">1</div>
+        <!--区块默认宽度为100%，width 指定区块宽度 -->
+        <!--区块高度默认根据内容自动设定，heigh 指定区块高度-->
+    <div class="title">概述</div>
+    <div class="neirong">CSS不能单独使用，必须与HTML或XML一起协同工作，为HTML或XML起装饰作用。
+        本文主要介绍用于装饰HTML网页的<span class="keyword">CSS</span>技术。其中HTML负责确定网页中有哪些内容，CSS确定以何种
+        外观(大小、粗细、颜色、对齐和位置)展现这些元素。CSS可以用于设定页面布局、设定页面元素样
+        式、设定适用于所有网页的全局样式。CSS可以零散地直接添加在要应用样式的网页元素上，也可以
+        集中化内置于网页、链接式引入网页以及导入式引入网页。</div>   
+</body>
+
+</html>
