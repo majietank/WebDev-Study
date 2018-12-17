@@ -9,10 +9,6 @@
         .title{font-weight:bold;font-size: 20px;border:1px solid skyblue;margin: 2px}
         .neirong{font-size: 15px;color: deeppink;border:1px solid skyblue;margin: 2px}
         .keyword{color: navy;font-style::normal;border:1px solid skyblue}
-        .box{
-            position: absolute;left: 600px;top:50px;
-            height: 100px;width: 100px;background-color: cornflowerblue
-            }
     </style><!--定义基础文本样式，方便重复调用-->
 </head>
 
@@ -27,16 +23,23 @@
                     color 定义字体颜色
                         blue    
         -->
-    <div><span style="color:crimson">层叠样式表</span>（英语：Cascading Style Sheets，简写CSS），又称串样式列表、级联样式表、
+    <div style="padding-left: 25px;padding-top: 10px"><span style="color:crimson">层叠样式表</span>（英语：Cascading Style Sheets，简写CSS），又称串样式列表、级联样式表、
     串接样式表、阶层式样式表，一种用来为结构化文档（如HTML文档或XML应用）添加样式（字体、间距和颜色等）的计算机语言，由W3C定义和维护。
     目前最新版本是CSS2.1，为W3C的推荐标准。CSS3现在已被大部分现代浏览器支持，而下一版的CSS4仍在开发中。</div>
         <!--span 标签 ：行内选取文字-->
+        <!--
+            padding 定义区块内容位置
+                padding-left 左
+                padding-right 右
+                padding-top 上
+                padding-bottom 下 
+        -->
     <hr></hr>
     <div>CSS Box Model</div>               
-    <div style="background-color: aqua;height: 20px;width:100%;margin-top: 10px;margin-bottom: 10px">每一个标签在网页中占用一个方型区块，这每一个方型区块称为Box Model。</div>
+    <div style="background-color: aqua;height: 20px;width:100%;margin-top: 10px;margin-bottom: 10px;">每一个标签在网页中占用一个方型区块，这每一个方型区块称为Box Model。</div>
         <!--background-color 定义区块背景色
-            height 定义区块高度
-            width 定义区块宽度
+            height 定义区块高度，默认根据内容适配高度
+            width 定义区块宽度，默认宽度100%
             margin 定义区块间距
                 margin-top 上
                 margin-left 左
@@ -44,29 +47,26 @@
                 margin-right 右
         -->
     <hr/>
-    <div style="border:2px solid brown;width: 400px;height: 400px">内容11</div>
-        <!--    border 区块边框 3个属性 
-                    1px 边框粗细，
-                    solid/dashed 边框样式，
-                    bule 边框颜色
-                width 指定区块宽度，默认宽度为网页100%，
-                heigh 指定区块高度，默认根据内容自动设定。
+    <div style="border:2px solid brown;width: 400px;height: 400px"></div>
+        <!--border 定义区块边框样式 
+                1px 边框粗细，
+                solid/dashed 边框样式，
+                bule 边框颜色
         -->
-    <div style="padding: 5px">内容111</div>
-        <!--padding 网页内容与边框距离-->
     <div class="title">概述</div>
     <div class="neirong">CSS不能单独使用，必须与HTML或XML一起协同工作，为HTML或XML起装饰作用。
         本文主要介绍用于装饰HTML网页的<span class="keyword">CSS</span>技术。其中HTML负责确定网页中有哪些内容，CSS确定以何种
         外观(大小、粗细、颜色、对齐和位置)展现这些元素。CSS可以用于设定页面布局、设定页面元素样
         式、设定适用于所有网页的全局样式。CSS可以零散地直接添加在要应用样式的网页元素上，也可以
         集中化内置于网页、链接式引入网页以及导入式引入网页。</div> 
-    <div class="box" ></div> 
-    <div style="height: 200px;width: 200px;background-color: blue;position: absolute;left: 600px;top: 600xp"></div>
-        <!--区块定位， position 定义区块定位形式
-                        absolute 绝对位置
-                        relative 相对位置
-                        left 从左到右 
-                        top 从上到下-->
+    <div style="height: 100px;width: 200px;background-color: blue;position: absolute;left: 600px;top: 200px;"></div>
+        <!--position 定义区块位置
+                absolute/relative 绝对位置/相对位置 定义区块位置形式
+        left 从左到右 
+        top 从上到下
+        bottom
+        right
+        -->
 </body>
 
 </html>
