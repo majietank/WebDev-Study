@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8"></meta>
+        <title>CCS Selectors</title>
+        <style>
+                /*定义CSS选择器*/
+                /*便签选择器*/
+                /*通过调用标签名称，定义调用标签内容风格*/
+                body{
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                }
+                h1{
+                    color: blue;
+                }
+                h2{
+                    color: cadetblue;
+                    padding-left: 10px;
+                }
+                div>h3{
+                    color: darkgray;
+                    padding-left: 20px;
+                }
+                /*class选择器*/
+                /*通过class调用，定义标签内容风格*/
+                .content{
+                    color: aquamarine;
+                    font-size: 16px;
+                }
+                .table-v{
+                    border: 1px solid orange;
+                    width: 400px;
+                    position: relative;
+                    left:35px;
+                }
+                /*ID选择器*/
+                /*通过调用ID名称，定义内容风格*/
+                #btn{
+                    border: 1px solid lightgreen;
+                    background-color: aliceblue
+                }
+                /*虚拟选择器*/
+                /*搭配其他选择器，*/
+                /*定义当鼠标移到目标处时显示风格*/
+                #btn:hover{
+                    background-color: blanchedalmond;
+                }
+                /*定义当目标处获得焦点时显示风格*/
+                input:focus{
+                    border: 2px solid red;
+                }
+                /*层级选择器*/
+                /*通过不同的上层级标签，定义相同标签不同内容风格*/
+            </style>
+    </head>
+    <body>
+        <h1 class="content">CSS Selectors</h1>
+        <h2 class="content">CSS 选择器</h2> 
+        <div>
+                <h3>便签选择器</h3>
+                <h3>Class选择器</h3>
+                <h3>ID选择器</h3>
+                <h3>虚拟选择器</h3>
+                <h3>层级选择器</h3>
+        </div>
+        <h3>选择器</h3>
+        <table class="table-v">
+                <tr>
+                    <td>选择器</td>
+                    <td>例子</td>
+                    <td>注释</td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>body</td>
+                    <td>选取所有的A</td>
+                </tr>
+                <tr>
+                    <td>A,B</td>
+                    <td>body,div</td>
+                    <td>选取所有的A&B</td>
+                </tr>
+                <tr>
+                    <td>A B</td>
+                    <td>body div</td>
+                    <td>选取A里所有的B</td>
+                </tr>
+                <tr>
+                    <td>A>B</td>
+                    <td>body>div</td>
+                    <td>选取上级是A的B</td>
+                </tr>
+                <tr>
+                    <td>A+B</td>
+                    <td>body+div</td>
+                    <td>选取所有AB</td>
+                </tr>
+            </table>
+        <div>
+            <input type="text"/><button id="btn">发送</button>
+        </div>       
+    </body>
+</html>
