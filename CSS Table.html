@@ -3,6 +3,15 @@
     <head>
         <meta charset="utf-8"></meta>
         <title>CSS 表格</title>
+        <style type="text/css">
+            table{
+                    width: 350px;
+                    border: 2px solid silver;
+            }
+            td{
+                border: 1px solid silver;
+            }
+        </style>
     </head>
     <body>
         <table>
@@ -12,7 +21,29 @@
                 <td>注释</td>
             </tr>
             <tr>
-                <td></td>
+                <td>A:link</td>
+                <td>a:link</td>
+                <td>选择所有未被访问的链接</td>
+            </tr>
+            <tr>
+                <td>A:visited</td>
+                <td>a:visited</td>
+                <td>选取所有已被访问的链接</td>
+            </tr>
+            <tr>
+                <td>A:active</td>
+                <td>a:active</td>
+                <td>选择活动链接</td>
+            </tr>
+            <tr>
+                <td>A:hover</td>
+                <td>a:hover</td>
+                <td>选择鼠标定位处</td>
+            </tr>
+            <tr>
+            <td>A:focus</td>
+            <td>a:focus</td>
+            <td>选择获得焦点的input</td>
             </tr>
         </table>
     </body>
